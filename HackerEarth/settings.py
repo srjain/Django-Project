@@ -22,6 +22,12 @@ SECRET_KEY = '7#u*zkv5&$7&2j^cqcsx&&!g@ctvuynq3#d!a+%*jpu_88v2hs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+#     'django.template.loaders.eggs.Loader',
+)
+
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -60,8 +66,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'PASSWORD':'pagal',
-        'HOST':'127.0.0.1',
-        'PORT':'3306',
+        'HOST':'',
+        'PORT':'',
         #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
