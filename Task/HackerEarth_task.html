@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>HackerEarth Task</title>
+</head>
+<body>
+		<form name="CodeFile" method="get" action="/compile/">
+			<p>Upload Your Code File Here!</p>
+			<div>
+				<input type="file" name="codefile" >
+			</div>
+			<div>
+				<input type="submit" value="Compile">
+			</div>
+		</form>
+		
+	
+	
+	<div>
+		<label>Output:</label>
+		{%if compile_result %}
+			{{compile_result['message']}}
+		{%else%}
+			<p>Internal Error!!</p>
+			
+			
+	
+	</div>
+	
+</body>
