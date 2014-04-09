@@ -1,0 +1,7 @@
+Basic requirement:
+
+django version: 1.6.3
+
+Python version: 2.7
+
+Database used :MySQL 
